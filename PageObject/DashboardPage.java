@@ -6,10 +6,10 @@
 
 class DashboardPage {
 
-    protected Webdriver driver;
+    protected WebDriver driver;
 
     // Constructor, receives the driver as an argument and sets it to the protected field.
-    public DashboardPage(WEebDriver _driver) {
+    public DashboardPage(WebDriver _driver) {
         driver = _driver;
     }
 

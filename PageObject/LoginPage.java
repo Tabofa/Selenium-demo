@@ -11,7 +11,7 @@ public class LoginPage {
     * This field is accessable from all methods within the class
     * Could aswell be private. Would accomplish the same thing in this case.
     */
-    protected WeBDriver driver;
+    protected WebDriver driver;
 
     // Constructor, maps the driver to the protected frild
     public LoginPage(WebDriver _driver) {
@@ -39,7 +39,6 @@ public class LoginPage {
         driver.findElement(By.id("login-button")).click();
         return new DashboardPage(driver);
     }
-
     
     public LoginPage clickLoginExpectFail() {
         driver.findElement(By.id("login-button")).click();
